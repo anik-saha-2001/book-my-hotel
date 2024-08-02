@@ -24,6 +24,7 @@ app.use(
 
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
-app.listen(7000, () => {
-  console.log(`Server is running on localhost:${7000}`);
+const PORT = 7000;
+app.listen(PORT, () => {
+  console.log(`Server is running on localhost:${PORT}`);
 });
