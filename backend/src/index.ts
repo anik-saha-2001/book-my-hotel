@@ -1,4 +1,4 @@
-import express from "express";
+import express, {Request, Response} from "express";
 import cors from "cors";
 import "dotenv/config";
 import mongoose from "mongoose";
@@ -38,6 +38,11 @@ app.use(express.static(path.join(__dirname, "../../frontend/dist")));
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/my-hotels", myHotelRoutes);
+
+// catch all route -> to pass on any req that are not api endpoints and redirect to frontend and manage it by react-router-dom
+app.get("*", (req: Request, res: Response) => {
+  res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"));
+});
 
 const PORT = 7000;
 app.listen(PORT, () => {
