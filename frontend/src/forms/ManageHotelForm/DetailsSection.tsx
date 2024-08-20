@@ -88,8 +88,8 @@ const DetailsSection = () => {
             <option value="" className="text-sm font-bold">
               Select a Rating
             </option>
-            {[1, 2, 3, 4, 5].map((num) => (
-              <option key={num} value={num}>
+            {[1, 2, 3, 4, 5].map((num, index) => (
+              <option key={index} value={num}>
                 {num}
               </option>
             ))}
