@@ -32,24 +32,33 @@ A hotel booking application built with the **MERN** stack, designed to provide a
 ## Getting Started
 
 1. Clone the repository:
+   
    ```bash
    git clone https://github.com/anik-saha-2001/book-my-hotel.git
    cd book-my-hotel
    ```
-2. Install dependencies:
-  ```bash
-  npm install
-  ```
+   
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+    
 3. Set up environment variables for MongoDB, Cloudinary, and Stripe:
+
   - MONGO_URI: MongoDB connection string.
   - CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET: Cloudinary credentials.
   - STRIPE_SECRET_KEY: Stripe API key.
+  
 4. Run the development server:
-  ```bash
-  cd backend
-  npm run dev
-  ```
+
+   ```bash
+   cd backend
+   npm run dev
+   ```
+   
 5. Run the frontend in new terminal
+
    ```bash
    cd frontend
    npm run dev
@@ -58,10 +67,12 @@ A hotel booking application built with the **MERN** stack, designed to provide a
 ## Testing
 
 Automated e2e tests ensure that the app is robust and scalable. Run Playwright tests with:
-  ```bash
-  cd backend
-  npm run e2e
-  ```
+
+   ```bash
+   cd backend
+   npm run e2e
+   ```
+   
 Also run the frontend.
 
 ## If u like this project please don't forget to give a ⭐
